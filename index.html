@@ -4,62 +4,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Verónica Jaque | Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #0d1117;
       color: #c9d1d9;
-      text-align: center;
-      margin: 0;
-      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      background-image: radial-gradient(circle at top left, #1f6feb20, transparent 70%);
     }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 1.5s ease;
+    }
+
     h1 {
       color: #58a6ff;
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin-bottom: 10px;
     }
+
     h2 {
       color: #8b949e;
-      font-weight: normal;
+      font-weight: 400;
       margin-top: 0;
+      font-size: 1.3em;
     }
+
     section {
+      width: 100%;
       max-width: 700px;
-      margin: 30px auto;
       background: #161b22;
       padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      margin: 20px 0;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.5);
+    }
+
+    h3 {
+      color: #58a6ff;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
     a {
       color: #58a6ff;
       text-decoration: none;
+      transition: color 0.3s;
     }
+
     a:hover {
+      color: #79c0ff;
       text-decoration: underline;
     }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #238636;
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      background: #2ea043;
+      transform: scale(1.05);
+    }
+
     footer {
-      margin-top: 30px;
+      margin-top: 40px;
       color: #8b949e;
       font-size: 0.9em;
+      text-align: center;
+    }
+
+    .iconos {
+      font-size: 1.8em;
+      margin: 10px 8px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <h1>👋 ¡Hola! Soy Verónica Jaque</h1>
-  <h2>Desarrolladora en formación | Ingeniería en Software</h2>
+  <header>
+    <h1>👋 ¡Hola! Soy Verónica Jaque</h1>
+    <h2>Desarrolladora en formación | Ingeniería en Software</h2>
+  </header>
 
   <section>
-    <p>Bienvenida a mi portafolio personal 🌸</p>
+    <p>🌸 Bienvenida a mi portafolio personal.</p>
     <p>Apasionada por la tecnología, la arquitectura de software y el desarrollo web.</p>
+    <p>Estudiante de la FISEI - Universidad Técnica de Ambato.</p>
   </section>
 
   <section>
     <h3>🛠️ Tecnologías y Herramientas</h3>
     <p>Java ☕ · JavaScript ⚡ · PHP 🐘</p>
     <p>Oracle SQL 🧠 · PostgreSQL 🗃️ · React ⚛️ · Node.js 🌿</p>
+    <p>Git 🔧 · GitHub 🐙 · HTML · CSS · Figma 🎨</p>
   </section>
 
-  <footer>⭐ Gracias por visitar mi página ⭐</footer>
+
+  <section>
+    <h3>📫 Contáctame</h3>
+    <p>💌 <a href="mailto:vjaque5367@uta.edu.ec">vjaque5367@uta.edu.ec</a></p>
+   
+  </section>
+
+  <footer>
+    ⭐ Gracias por visitar mi página ⭐<br>
+    <small>© 2025 Verónica Jaque | Desarrolladora en formación</small>
+  </footer>
 </body>
 </html>
+
